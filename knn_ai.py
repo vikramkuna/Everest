@@ -9,7 +9,8 @@ import pandas as pd
 import numpy as np
 
 #sample dataset - revisit
-df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%203/data/teleCust1000t.csv')
+#df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%203/data/teleCust1000t.csv')
+df=pd.read_text('./training_data.txt")
 df.head()
 df['custcat'].value_counts()
 df.hist(column='income', bins=50)
